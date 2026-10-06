@@ -108,8 +108,6 @@ O sistema foi dividido em **5 páginas** que se comunicam:
 
 ## 🖼️ Telas do sistema
 
-> Substitua as imagens abaixo por prints reais das telas do projeto.
-
 ### Painel principal
 ![Painel](./assets/print-painel.png)
 
