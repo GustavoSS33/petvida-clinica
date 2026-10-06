@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro — PetVida & Estética Animal</title>
+</head>
+<body class="pagina-cadastro">
+
+  <!-- ==================== TOPO ==================== -->
+  <header class="topo-agenda">
+
+    <a href="index.html" class="topo-titulo">Cadastro</a>
+
+    <div class="topo-nav topo-nav-semana">
+      <span class="nav-texto">📝 Novo Registro</span>
+    </div>
+
+  </header>
+
+  <!-- ==================== BOTÕES ==================== -->
+  <section class="barra-legenda">
+
+    <div></div>
+
+    <div class="botoes-acao">
+      <a href="index.html" class="botao-voltar">Voltar</a>
+    </div>
+
+  </section>
+
+  <!-- ==================== FORMULÁRIO ==================== -->
+  <form class="form-cadastro" action="index.html">
+
+    <!-- ============ SEÇÃO: TUTOR ============ -->
+    <section class="form-secao">
+      <h2 class="form-secao-titulo">👤 Dados do Tutor</h2>
+
+      <div class="form-grid">
+
+        <div class="form-campo form-campo-full">
+          <label for="tutor-nome">Nome completo</label>
+          <input
+            type="text"
+            id="tutor-nome"
+            name="tutor-nome"
+            placeholder="Ex: João Silva"
+            required
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="tutor-cpf">CPF</label>
+          <input
+            type="text"
+            id="tutor-cpf"
+            name="tutor-cpf"
+            placeholder="000.000.000-00"
+            required
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="tutor-tel">Telefone</label>
+          <input
+            type="tel"
+            id="tutor-tel"
+            name="tutor-tel"
+            placeholder="(00) 00000-0000"
+            required
+          >
+        </div>
+
+        <div class="form-campo form-campo-full">
+          <label for="tutor-email">E-mail (opcional)</label>
+          <input
+            type="email"
+            id="tutor-email"
+            name="tutor-email"
+            placeholder="tutor@email.com"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO: PET ============ -->
+    <section class="form-secao">
+      <h2 class="form-secao-titulo">🐾 Dados do Pet</h2>
+
+      <div class="form-grid">
+
+        <div class="form-campo form-campo-full">
+          <label for="pet-nome">Nome do pet</label>
+          <input
+            type="text"
+            id="pet-nome"
+            name="pet-nome"
+            placeholder="Ex: Nika"
+            required
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="pet-especie">Espécie</label>
+          <select id="pet-especie" name="pet-especie" required>
+            <option value="">Selecione...</option>
+            <option value="cachorro">🐶 Cachorro</option>
+            <option value="gato">🐱 Gato</option>
+            <option value="ave">🐦 Ave</option>
+            <option value="roedor">🐹 Roedor</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-campo">
+          <label for="pet-raca">Raça</label>
+          <input
+            type="text"
+            id="pet-raca"
+            name="pet-raca"
+            placeholder="Ex: Labrador"
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="pet-idade">Idade</label>
+          <input
+            type="text"
+            id="pet-idade"
+            name="pet-idade"
+            placeholder="Ex: 3 anos"
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="pet-peso">Peso (kg)</label>
+          <input
+            type="number"
+            id="pet-peso"
+            name="pet-peso"
+            placeholder="Ex: 12.5"
+            step="0.1"
+            min="0"
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="pet-porte">Porte</label>
+          <select id="pet-porte" name="pet-porte" required>
+            <option value="">Selecione...</option>
+            <option value="mini">Mini (até 5 kg)</option>
+            <option value="pequeno">Pequeno (5–10 kg)</option>
+            <option value="medio">Médio (10–25 kg)</option>
+            <option value="grande">Grande (25–45 kg)</option>
+            <option value="gigante">Gigante (45+ kg)</option>
+          </select>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO: AGENDAMENTO ============ -->
+    <section class="form-secao">
+      <h2 class="form-secao-titulo">📅 Agendamento</h2>
+
+      <div class="form-grid">
+
+        <div class="form-campo">
+          <label for="ag-servico">Serviço</label>
+          <select id="ag-servico" name="ag-servico" required>
+            <option value="">Selecione...</option>
+            <option value="banho">🛁 Banho</option>
+            <option value="tosa">✂️ Tosa</option>
+            <option value="banho-tosa">🛁 Banho + Tosa</option>
+            <option value="vacina">💉 Vacinação</option>
+            <option value="consulta">🩺 Consulta</option>
+          </select>
+        </div>
+
+        <div class="form-campo">
+          <label for="ag-data">Data</label>
+          <input
+            type="date"
+            id="ag-data"
+            name="ag-data"
+            required
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="ag-hora">Hora</label>
+          <input
+            type="time"
+            id="ag-hora"
+            name="ag-hora"
+            required
+          >
+        </div>
+
+        <div class="form-campo">
+          <label for="ag-responsavel">Profissional responsável</label>
+          <select id="ag-responsavel" name="ag-responsavel">
+            <option value="">Selecione...</option>
+            <option value="gabriel">Dr. Gabriel Santos</option>
+            <option value="camila">Dra. Camila Paes</option>
+            <option value="rafael">Rafael (Tosador)</option>
+            <option value="bianca">Bianca (Tosadora)</option>
+          </select>
+        </div>
+
+        <div class="form-campo form-campo-full">
+          <label for="ag-obs">Observações importantes</label>
+          <textarea
+            id="ag-obs"
+            name="ag-obs"
+            rows="4"
+            placeholder="Alergias, cuidados especiais, comportamento, medicações em uso..."
+          ></textarea>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ BOTÕES DE AÇÃO ============ -->
+    <div class="form-acoes">
+      <a href="index.html" class="botao-form botao-cancelar">Cancelar</a>
+      <button type="submit" class="botao-form botao-salvar">Salvar Cadastro</button>
+    </div>
+
+  </form>
+
+  <!-- Faixa azul do rodapé -->
+  <div class="rodape-faixa"></div>
+
+</body>
+</html>
